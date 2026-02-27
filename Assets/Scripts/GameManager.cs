@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
 
     public static GameManager Instance { get; private set; }
-     private static int levelNumber = 1 ;
+    private static int levelNumber = 1;
     [SerializeField] private List<GameLevel> gameLevelList;
 
     private int score;
@@ -86,16 +86,24 @@ public class GameManager : MonoBehaviour
     public void GoToNextLevel()
     {
         levelNumber++;
-        SceneManager.LoadScene(0);
+        SceneLoader.LoadScene(SceneLoader.Scene.GameScene);
     }
 
     public void RetryLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneLoader.LoadScene(SceneLoader.Scene.GameScene);
     }
 
     public int GetLevelNumber()
     {
         return levelNumber;
+    }
+    public void PauseGame()
+    {
+        Time.timeScale =0f;
+    }
+     public void UnpauseGame()
+    {
+        Time.timeScale =1f;
     }
 }
