@@ -2,7 +2,7 @@
 - Project name: LunarLanding
 - Unity version: Unity 2022.3.62f2
 - Active scene:
-  - Name: SampleScene
+  - Name: GameScene
   - Tags:
     - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController
   - Layers:

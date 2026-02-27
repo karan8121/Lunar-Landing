@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "LunarLanding.sln"
+    "dotnet.defaultSolution": "Lunar-Landing.sln"
 }
